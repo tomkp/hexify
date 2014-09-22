@@ -2,7 +2,7 @@
 
 var hexify = {
 
-    toByteArray: function(hexStr) {
+    toByteArray: function (hexStr) {
         var hex = [];
         var arr = hexStr.match(/[0-9a-fA-F]{2}/g);
         arr.forEach(function (h) {
@@ -11,11 +11,11 @@ var hexify = {
         return hex;
     },
 
-    toHexString: function(byteArray) {
+    toHexString: function (byteArray) {
         var str = '';
         byteArray.forEach(function (b) {
-            var hex = (b.toString(16)).toUpperCase();
-            str += (hex.length<2?'0' + hex:hex);
+            var hex = (b.toString(16));
+            str += (hex.length < 2 ? '0' + hex : hex);
         });
         return str;
     }
