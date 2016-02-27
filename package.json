@@ -14,7 +14,8 @@
     },
     "scripts": {
         "test": "node test/hexify-test.js | tap-spec",
-        "coverage": "covert test/*.js"
+        "coverage": "covert test/*.js",
+        "release:patch": "npm test && npm run compile && npm version patch && git push && npm publish"
     },
     "repository": {
         "type": "git",
