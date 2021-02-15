@@ -1,6 +1,6 @@
 {
   "name": "hexify",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hex conversion utils",
   "main": "hexify.js",
   "directories": {
